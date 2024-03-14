@@ -11,7 +11,7 @@ pub mod delegated_authority {
     }
 }
 
-#[Account]
+#[account]
 pub struct DelegatedAuthority {
     pub authority: Pubkey,
     pub delegator: Pubkey,
