@@ -11,5 +11,11 @@ pub mod delegated_authority {
     }
 }
 
+#[Account]
+pub struct DelegatedAuthority {
+    pub authority: Pubkey,
+    pub delegator: Pubkey,
+}
+
 #[derive(Accounts)]
 pub struct Initialize {}
